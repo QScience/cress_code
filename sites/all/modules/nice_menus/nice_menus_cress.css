@@ -1,0 +1,101 @@
+/******************************
+ Global CSS for ALL menu types
+******************************/
+
+ul.nice-menu,
+ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #ccc;
+}
+
+ul.nice-menu li {
+  border: 1px solid #ccc;
+  border-top: 0;
+  float: left; /* LTR */
+  background-color: #eee;
+}
+
+ul.nice-menu a {
+  padding: 0.3em 5px 0.3em 5px;
+}
+
+ul.nice-menu ul {
+  top: 1.8em;
+  left: -1px; /* LTR */
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-right: 0; /* LTR */
+}
+
+ul.nice-menu ul li {
+  width: 12.5em;
+}
+
+/******************************
+ VERTICAL (left/right) menus
+******************************/
+
+/* This is the default width of all vertical menus. */
+ul.nice-menu-right, ul.nice-menu-left,
+ul.nice-menu-right li, ul.nice-menu-left li {
+  width:auto; float:left; list-style:none;
+}
+
+/* VERTICAL menus where submenus pop RIGHT (default). */
+ul.nice-menu-right ul {
+  width: 12.5em;
+  left: 12.5em;
+  top: -1px;
+}
+
+ul.nice-menu-right ul ul {
+  width: 12.5em;
+  left: 12.5em;
+  top: -1px;
+}
+
+ul.nice-menu-right li.menuparent,
+ul.nice-menu-right li li.menuparent {
+  width:auto; float:left; font-size:14px; line-height:16px; color:#605226; position:relative;
+}
+
+ul.nice-menu-right li.menuparent a,
+ul.nice-menu-right li li.menuparent a {
+  text-decoration:none; color:#605226; padding:17px 11px 17px 11px; float:left; width:auto;
+}
+
+ul.nice-menu-right li.menuparent a:hover,
+ul.nice-menu-right li li.menuparent a:hover {
+  color:#605226;
+}
+
+
+ul.nice-menu-right li.menuparent:hover,
+ul.nice-menu-right li li.menuparent:hover {
+  color:#605226; background:#fbf6f1;
+}
+
+
+#menu ul{width:auto; float:left; list-style:none;}
+
+#menu ul li{width:auto; float:left; font-size:14px; line-height:16px; color:#605226; position:relative;}
+#menu ul li a{text-decoration:none; color:#605226; padding:17px 11px 17px 11px; float:left; width:auto;}
+#menu ul li a:hover{color:#605226;}
+
+
+#menu li ul.sub_menu{width:133px; position:absolute; top:50px; left:0px; webkit-border-radius: 5px;
+border-radius: 5px;  background:#fff; behavior: url(PIE.htc); z-index:1;  }
+#menu li ul.sub_menu li{width:100%; float:left; font-size:15px; line-height:18px; color:#605226;   border-bottom:1px solid #e6dfd4;   }
+#menu li ul.sub_menu li a{text-decoration:none; color:#605226; width:90%; padding:5px 0 5px 12px!important; float:left;    }
+#menu li ul.sub_menu li a:hover{color:#605226; background:#fbf6f1;  }
+
+#menu li ul.sub_menu li.first a:hover {width:90%; float:left; -webkit-border-radius: 5px 5px 0px 0px;
+        border-radius: 5px 5px 0px 0px;   behavior: url(PIE.htc); z-index:1; background:#fbf6f1; border:none!important;}
+
+#menu li ul.sub_menu li.last a:hover {-webkit-border-radius: 0px 0px 5px 5px;
+        border-radius: 0px 0px 5px 5px;  behavior: url(PIE.htc); z-index:1; background:#fbf6f1; border:0px!important;}  
+#menu li ul.sub_menu li.none{border-bottom:none;}
+
+

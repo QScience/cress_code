@@ -15,23 +15,8 @@ img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
 #header .logo.mar{margin-top:150px;}
 #header .right_side{width:685px; float:right; background:url(images/menu_bg.png) no-repeat 0 0; margin-top:30px ; padding-left:15px;}
 #header .right_side.mar{margin-top:147px;}
+
 #menu{width:512px; float:left;}
-#menu ul{width:auto; float:left; list-style:none;}
-#menu ul li{width:auto; float:left; font-size:14px; line-height:16px; color:#605226; position:relative;}
-#menu ul li a{text-decoration:none; color:#605226; padding:17px 11px 17px 11px; float:left; width:auto;}
-#menu ul li a:hover{color:#605226;}
-#menu li ul.sub_menu{width:133px; position:absolute; top:50px; left:0px; webkit-border-radius: 5px;
-border-radius: 5px;  background:#fff; behavior: url(PIE.htc); z-index:1;  }
-#menu li ul.sub_menu li{width:100%; float:left; font-size:15px; line-height:18px; color:#605226;   border-bottom:1px solid #e6dfd4;   }
-#menu li ul.sub_menu li a{text-decoration:none; color:#605226; width:90%; padding:5px 0 5px 12px!important; float:left;    }
-#menu li ul.sub_menu li a:hover{color:#605226; background:#fbf6f1;  }
-
-#menu li ul.sub_menu li.first a:hover {width:90%; float:left; -webkit-border-radius: 5px 5px 0px 0px;
-        border-radius: 5px 5px 0px 0px;   behavior: url(PIE.htc); z-index:1; background:#fbf6f1; border:none!important;}
-
-#menu li ul.sub_menu li.last a:hover {-webkit-border-radius: 0px 0px 5px 5px;
-        border-radius: 0px 0px 5px 5px;	 behavior: url(PIE.htc); z-index:1; background:#fbf6f1; border:0px!important;}	
-#menu li ul.sub_menu li.none{border-bottom:none;}
 		
 #login_sec{width:147px; float:right; padding-top:10px;}
 #login_sec .login{width:59px; height:26px; text-decoration:none; background:url(images/login.png) no-repeat 0 0; float:left; margin-right:8px; display:inline;}
