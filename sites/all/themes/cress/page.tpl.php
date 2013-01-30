@@ -95,6 +95,6 @@
 </div>
 <script type="text/javascript">
   jQuery(document).ready(function() {
-    jQuery("#outer_header, #innarpage_header").backstretch("/CRESS/sites/all/themes/cress/images/header_bg.png");
+    jQuery("#outer_header, #innarpage_header").backstretch("/sites/all/themes/cress/images/header_bg.png");
   });
 </script>
