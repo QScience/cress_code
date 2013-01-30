@@ -6,7 +6,7 @@ img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
 .clear{clear:both;}
 :focus{outline:none; border:none;}
 .wrapper{width:1008px; margin:0 auto;}
-#main{width:100%; float:left; background:url(images/man_group_bg.png) no-repeat center bottom; min-width:1008px }
+#main{width:100%; float:left; background:url(images/man_group_bg.jpg) no-repeat right bottom; min-width:1008px }
 
 #outer_header{width:100%; float:left; height:661px;}
 #innarpage_header{width:100%; float:left; background:url(images/innar_header.png) no-repeat center 0; height:778px;}
