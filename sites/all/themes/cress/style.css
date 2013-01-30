@@ -79,7 +79,7 @@ font-size:16px; line-height:20px; border:none; background:none;}
 .common_section .text_box p.pad{padding-top:8px;}
 .common_section .text_box p span{color:#3f7c8a;}
 .common_section .photo.pad{padding-top:36px;}
-.partner_list{width:682px; float:left; position:relative; z-index:9999;}
+.partner_list{width:682px; float:left; position:relative; z-index:9;}
 
 .partner_list ul{width:auto; float:left; list-style:none; padding-top:34px;}
 
