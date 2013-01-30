@@ -1,0 +1,20 @@
+name = CRESS
+description = Theme for CRESS
+core = 7.x
+engine = phptemplate
+regions[header] = Header
+regions[login] = Login
+regions[sidebar_first] = Right sidebar
+regions[content] = Content
+regions[main_footer] = Main Footer
+regions[left_footer] = Left Footer
+
+stylesheets[all][] = style.css
+#stylesheets[all][] = fontface/stylesheet.css
+#scripts[] = js/cufon.js
+#scripts[] = js/Aeroportal_500.font.js
+scripts[] = js/ieh5fix.js
+scripts[] = js/jquery.cycle.all.js
+scripts[] = js/menu.js
+scripts[] = js/jquery.backstretch.min.js
+
