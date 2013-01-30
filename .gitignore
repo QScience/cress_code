@@ -41,3 +41,9 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+
+# PHPEclipse config files #
+##########################
+.buildpath
+.settings/
+.project
