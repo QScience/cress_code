@@ -17,9 +17,7 @@ background-color: transparent;
 background-image: none;
 }
 
-
-
-ul.nice-menu-down{width:512px; float:left;font-size:14px;}
+ul.nice-menu-down{width:512px; float:left;font-size:14px; list-style:none;}
 ul.nice-menu-down ul{width:auto; float:left; list-style:none;}
 ul.nice-menu-down ul li{width:auto; float:left;  line-height:16px; color:#605226; position:relative;}
 ul.nice-menu-down a{text-decoration:none; color:#605226; padding:17px 11px 17px 11px !important; float:left; width:auto;}
