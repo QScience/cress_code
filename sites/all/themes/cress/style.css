@@ -58,7 +58,8 @@ font-size:16px; line-height:20px; border:none; background:none;}
 .extra_box{width:697px; float:left; padding-bottom:168px;}
 .common_box{width:689px; float:left; padding-right:20px; }
 
-.common_box h3{font-size:29px; line-height:32px; color:#ae2101;  font-family: Helvetica, Arial, sans-serif; padding-bottom:11px; width:100%; }
+.common_box h3 {font-size:29px; line-height:32px; color:#ae2101 !important;  font-family: Helvetica, Arial, sans-serif; padding-bottom:11px; width:100%; text-decoration: none !important;}
+.common_box h3 a:hover {color: #d27f6c !important; text-decoration: none !important;}
 .common_box p{font-size:13px; line-height:15px; color:#626262; padding-bottom:19px; }
 .common_box p a{text-decoration:none; color:#3f7c8a;}
 .content_detail_box{width:684px; float:left; padding: 0 16px 0 22px;}
