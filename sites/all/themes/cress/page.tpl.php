@@ -14,23 +14,9 @@
 
 
         <div class="right_side">
-               <?php if ($main_menu): ?>
-                <div id="menu" class="navigation">
-                  <?php print theme('links__system_main_menu', array(
-                    'links' => $main_menu,
-                    'attributes' => array(
-                      'id' => 'main-menu-links',
-                      'class' => array('links', 'clearfix'),
-                    ),
-                    'heading' => array(
-                      'text' => t('Main menu'),
-                      'level' => 'h2',
-                      'class' => array('element-invisible'),
-                    ),
-                  )); ?>
-                </div> <!-- /#main-menu -->
-              <?php endif; ?>
+              
 
+            <?php print render($page['main_menu']); ?>
             <!--
             <ul id="nav" >
               <li><a href="#">Home</a></li>
@@ -95,6 +81,6 @@
 </div>
 <script type="text/javascript">
   jQuery(document).ready(function() {
-    jQuery("#outer_header, #innarpage_header").backstretch("/sites/all/themes/cress/images/header_bg.png");
+    jQuery("#outer_header, #innarpage_header").backstretch("/sites/all/themes/cress/images/header_bg.jpg");
   });
 </script>

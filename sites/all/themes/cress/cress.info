@@ -3,6 +3,7 @@ description = Theme for CRESS
 core = 7.x
 engine = phptemplate
 regions[header] = Header
+regions[main_menu] = Main Menu
 regions[login] = Login
 regions[sidebar_first] = Right sidebar
 regions[content] = Content

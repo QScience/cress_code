@@ -9,7 +9,7 @@ img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
 #main{width:100%; float:left; background:url(images/man_group_bg.jpg) no-repeat right bottom; min-width:1008px }
 
 #outer_header{width:100%; float:left; height:661px;}
-#innarpage_header{width:100%; float:left; background:url(images/innar_header.png) no-repeat center 0; height:778px;}
+#innarpage_header{width:100%; float:left; background:url(images/header_bg.jpg) no-repeat center 0; height:799px;}
 #header{width:1008px; float:left;}
 #header .logo{float:left; margin:28px 0 0 0;}
 #header .logo.mar{margin-top:150px;}
