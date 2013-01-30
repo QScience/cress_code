@@ -37,39 +37,59 @@ ul.nice-menu ul li {
   width: 12.5em;
 }
 
+
 /******************************
- VERTICAL (left/right) menus
+ HORIZONTAL (down) menus
 ******************************/
 
-/* This is the default width of all vertical menus. */
-ul.nice-menu-right, ul.nice-menu-left,
-ul.nice-menu-right li, ul.nice-menu-left li {
-  width: 12.5em;
+ul.nice-menu-down {
+  float: left; /* LTR */
+  border: 0;
 }
 
-/* VERTICAL menus where submenus pop RIGHT (default). */
-ul.nice-menu-right ul {
-  width: 12.5em;
-  left: 12.5em;
+ul.nice-menu-down li {
+  border-top: 1px solid #ccc;
+}
+
+ul.nice-menu-down li li {
+  border-top: 0;
+}
+
+ul.nice-menu-down ul {
+  left: 0; /* LTR */
+}
+
+ul.nice-menu-down ul li {
+  clear: both;
+}
+
+ul.nice-menu-down li ul li ul {
+  left: 12.5em; /* LTR */
   top: -1px;
 }
 
-ul.nice-menu-right ul ul {
-  width: 12.5em;
-  left: 12.5em;
-  top: -1px;
+ul.nice-menu-down .menuparent a {
+  text-decoration:none; color:#605226; padding:17px 11px 17px 11px;
 }
 
-ul.nice-menu-right li.menuparent,
-ul.nice-menu-right li li.menuparent {
-font-size:14px;
+ul.nice-menu-down .menuparent a:hover{color:#605226;}
 
+ul.nice-menu-down li.menuparent {
+  background:#fff;
 }
 
-ul.nice-menu-right li.menuparent:hover,
-ul.nice-menu-right li li.menuparent:hover {
-  background: #ccc url(arrow-right.png) right center no-repeat;
+ul.nice-menu-down li.menuparent:hover {
+  background: #fbf6f1; /* LTR */
 }
+
+ul.nice-menu-down li li.menuparent {
+  background:#fff;
+}
+
+ul.nice-menu-down li li.menuparent:hover {
+  background: #fbf6f1; /* LTR */
+}
+
 
 
 
