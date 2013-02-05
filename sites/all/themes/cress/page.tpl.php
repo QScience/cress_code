@@ -58,7 +58,19 @@
 
       <div class="top_container <?php if(!$home){ echo 'mar'; } ?>">
         <div class="left_sec">
-        
+          <?php print render($title_prefix); ?>
+          <?php if ($title): ?>
+            <h1 class="title" id="page-title">
+              <?php print $title; ?>
+            </h1>
+          <?php endif; ?>
+          <?php print render($title_suffix); ?>
+      
+          <?php if ($tabs): ?>
+            <div class="tabs">
+              <?php print render($tabs); ?>
+            </div>
+          <?php endif; ?>
           <div class="common_box">
             <?php print render($page['content']); ?>
           </div>
