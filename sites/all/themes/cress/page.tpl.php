@@ -49,13 +49,20 @@
 
 
         <?php print render($page['header']); ?>
-
+        
+        <!-- @TO-DO: This probably should be printed elsewhere, I have set it here for development purposes -->
+        <?php if ($breadcrumb): ?>
+          <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+        <?php endif; ?>
+    
       </div>
     </div>
   </div>
-  <div class="wrapper">
-    <div id="body_container">
 
+  <div class="wrapper">
+
+    <div id="body_container">
+     
       <div class="top_container <?php if(!$home){ echo 'mar'; } ?>">
         <div class="left_sec">
           <?php print render($title_prefix); ?>
