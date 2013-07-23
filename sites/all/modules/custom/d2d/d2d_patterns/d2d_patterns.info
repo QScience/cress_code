@@ -1,0 +1,16 @@
+name = D2D_patterns
+description = "Add Patterns integration to load configuration from text files"
+package = D2D
+core = 7.x
+php = 5.3
+
+dependencies[] = d2d
+dependencies[] = patterns
+
+
+
+; Information added by drush on 2013-07-23
+version = "unknown"
+project = "d2d"
+datestamp = "1374573958"
+

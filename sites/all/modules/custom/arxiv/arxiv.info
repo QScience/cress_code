@@ -1,0 +1,11 @@
+name = Arxiv
+description =  Get paper from arxiv.org.
+core = 7.x
+dependencies[] = statistics
+
+
+; Information added by drush on 2013-07-23
+version = "unknown"
+project = "arxiv"
+datestamp = "1374573960"
+

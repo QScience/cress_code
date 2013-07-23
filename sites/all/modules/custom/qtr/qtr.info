@@ -1,0 +1,15 @@
+name = QTR
+description = QTR algorithm (experimental).
+core = 7.x
+version = 7.x-1.x-dev
+package = Reputation
+
+dependencies[] = plus1
+files[] = qtr.install
+
+
+; Information added by drush on 2013-07-23
+version = "unknown"
+project = "qtr"
+datestamp = "1374573963"
+

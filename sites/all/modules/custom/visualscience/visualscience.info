@@ -1,0 +1,15 @@
+name = VisualScience
+description = Provides various searching and viewing ways for QScience.
+package = VisualScience
+core = 7.x
+configure = admin/config/media/visualscience
+
+version = "7.x-1.x-dev"
+project = "visualscience"
+
+
+; Information added by drush on 2013-07-23
+version = "unknown"
+project = "visualscience"
+datestamp = "1374573959"
+

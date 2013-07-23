@@ -1,0 +1,16 @@
+name = XML Parser
+description = XML Parser for Patterns files. 
+dependencies[] = patterns
+dependencies[] = libraries
+
+core = 7.x
+version = 7.x-2.x-dev
+package = Patterns
+php = 5.2
+
+
+; Information added by drush on 2013-07-23
+version = ""
+project = "patterns"
+datestamp = "1374573966"
+
