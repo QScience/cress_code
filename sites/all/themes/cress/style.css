@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Armata);
+
+h1,h2,h3 {font-family: 'Armata', sans-serif;}
 *{margin:0px; padding:0px;}
 body{font-size:12px; line-height:15px; color:#000; font-family:Arial, Helvetica, sans-serif; background:#f9f9fa;}
 img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
@@ -5,6 +8,11 @@ img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
 .curve img{float:left;}
 .clear{clear:both;}
 :focus{outline:none; border:none;}
+
+/* titles and co */
+#page-title {color: #ae2101; margin: 15px 0 20px 0; line-height: 25px;}
+h3 a {color: #ae2101; text-decoration: none;}
+
 .wrapper{width:1008px; margin:0 auto;}
 #main{width:100%; float:left; background:url(images/man_group_bg.jpg) no-repeat right bottom; min-width:1008px }
 
@@ -16,9 +24,9 @@ img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
 #header .right_side{width:685px; float:right; background:url(images/menu_bg.png) no-repeat 0 0; margin-top:30px ; padding-left:15px;}
 #header .right_side.mar{margin-top:147px;}
 
-#menu{width:512px; float:left;}
+#menu{width:525px; float:left;}
 		
-#login_sec{width:147px; float:right; padding-top:10px;}
+#login_sec{width:72px; float:right; padding-top:10px;}
 #login_sec .login{width:59px; height:26px; text-decoration:none; background:url(images/login.png) no-repeat 0 0; float:left; margin-right:8px; display:inline;}
 #login_sec .login span{font-size:13px; line-height:16px; color:#605226; padding-top:4px;  text-align:center; width:100%; float:left;}
 
@@ -26,24 +34,16 @@ img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
 #login_sec .singup span{font-size:13px; line-height:16px; color:#fff; padding-top:4px;  text-align:center; width:100%; float:left;}
 
 #social{width:876px; float:left; height:353px; margin-left:120px; display:inline; margin-top:-46px;}
-#search_bg{width:426px; float:left; height:60px; background:url(images/search_bg.png) no-repeat 0 0; padding:7px 0 0 0; margin-top:-70px;}
-#search_bg form{width:100%; float:left;}
-#search_bg input{width:280px; float:left; padding:10px; font-family:Arial, Helvetica, sans-serif; 
-font-size:16px; line-height:20px; border:none; background:none;}
-
-#search_bg .search_btn{width:116px; float:left; height:44px; background:url(images/search_btn.png) no-repeat 0 0;
- font-family:Arial, Helvetica, sans-serif; color:#fff; cursor:pointer; }
  
 #body_container{width:1008px; float:left; position:relative;}
 #body_container .man_group{width:100%; position:absolute; right:-693px; bottom:-40px;  height:500px;}
-.top_container{width:968px; float:left; background:url(images/top_curve_bg.png) no-repeat 0 0; 
-  margin-top:-165px; padding:24px 18px 0 22px; }
-.top_container.mar{margin-top:-582px;}
+.top_container{width:968px; float:left; background:url(images/top_curve_bg.png) no-repeat 0 0; margin-top:-165px; padding:24px 18px 0 22px; }
+.top_container.mar{margin-top:-582px; min-height: 600px;}
 .left_sec{width:697px; float:left;}
 .extra_box{width:697px; float:left; padding-bottom:168px;}
 .common_box{width:689px; float:left; padding-right:20px; }
 
-.common_box h3 {font-size:29px; line-height:32px; color:#ae2101 !important; font-family: Helvetica, Arial, sans-serif; padding-bottom:11px; width:100%; }
+.common_box h3 {font-size:24px; line-height:32px; color:#ae2101 !important; padding:10px 0 11px 0; width:100%; }
 .common_box h3 a {text-decoration: none !important; color:#ae2101 !important;}
 .common_box h3 a:hover {color: #d27f6c !important; text-decoration: none !important;}
 .common_box p{font-size:13px; line-height:15px; color:#626262; padding-bottom:19px; }
@@ -76,7 +76,7 @@ font-size:16px; line-height:20px; border:none; background:none;}
 .partner_list ul li.pad1{padding:0px 20px 0 5px;}
 .partner_list ul.pad{padding-left:77px; padding-top:33px;}
 .partner_list ul li.last{padding-left:0px;}
-.right_sec{width:271px; float:right;}
+.right_sec{width:241px; float:right; padding: 0 15px 0 15px;}
 .right_sec .calender_box{ width:269px; float:left;}
 .right_sec .calender_box h2{width:253px; float:left; font-size:18px; line-height:25px; color:#b32901; font-family: Helvetica, Arial, sans-serif; background:url(images/head_bg.png) no-repeat 0 0; padding:13px 0 10px 16px;}
 .right_sec .calender_box small{ float:left; text-align:center; width:100%; padding-bottom:16px; padding-top:15px;}
@@ -89,22 +89,32 @@ font-size:16px; line-height:20px; border:none; background:none;}
 .right_sec .upcoming_event .box span{ font-size:13px; line-height:16px; color:#4c4c4c; padding-bottom:3px; float:left;}
 
 
-#footer{width:1008px; float:left; background:url(images/footer_bg.jpg) no-repeat 0 0; margin:47px 9px 0px 9px; display:inline; height:71px;}
-#footer .left_footer{width:381px; float:left;}
+#footer{width:930px; float:left; background:url(images/footer_bg.jpg) no-repeat center bottom #fff; padding: 20px 30px 0 30px; margin:47px 9px 0px 9px; display:inline; height:240px;}
+#footer .left_footer{width:381px; float:left; padding-top:13px;}
 #footer .left_footer p{font-size:13px; line-height:16px; color:#a3a3a3; padding:23px 0 0 24px;}
-#footer .right_footer{width:531px; float:right; padding-top:13px;}  
+#footer .right_footer{width:531px; float:right; padding-top:23px;}  
 #footer .right_footer ul{width:auto; float:left; list-style:none;}
 #footer .right_footer ul li{width:auto; float:left; background:url(images/sep.jpg) no-repeat right 0; padding: 0 15px 0 10px }
 #footer .right_footer ul li a{text-decoration:none; color:#fff;}
 #footer .right_footer ul li a:hover{color:#fff;}  
 #footer .right_footer ul li p{font-size:13px; line-height:16px; color:#a3a3a3; padding-top:13px;} 
-  
 #footer .right_footer ul li.last{background:none;}  
-  
-  
-  
-  
-  
+ 
+
+/* search form frontpage */ 
+#block-search-form {position: absolute; top: 400px;width:426px;height:60px; background:url(images/search_bg.png) no-repeat 0 0;padding:7px 0 0 0;}
+#block-search-form input.form-text{width:280px; float:left; padding:13px 10px 10px 10px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; border:none; background:none;}
+#search_bg .search_btn{width:116px; float:left; height:44px; background:url(images/search_btn.png) no-repeat 0 0;
+ font-family:Arial, Helvetica, sans-serif; color:#fff; cursor:pointer; }
+
+/* media gallery */
+.media-gallery-collection .node h3 {font-size: 12pt; color: #000;}
+.media-gallery-collection {padding: 0; margin: 0}
+
+/* hacks */
+.block-views .view .date-nav-wrapper .date-prev {margin-left: 0px;}
+
+
   
   
   
