@@ -7,14 +7,12 @@ regions[main_menu] = Main Menu
 regions[login] = Login
 regions[sidebar_first] = Right sidebar
 regions[content] = Content
+regions[content_header] = Content Header
 regions[main_footer] = Main Footer
 regions[left_footer] = Left Footer
 
 stylesheets[all][] = style.css
 stylesheets[all][] = cressmenu.css
-#stylesheets[all][] = fontface/stylesheet.css
-#scripts[] = js/cufon.js
-#scripts[] = js/Aeroportal_500.font.js
 scripts[] = js/ieh5fix.js
 scripts[] = js/jquery.cycle.all.js
 scripts[] = js/menu.js

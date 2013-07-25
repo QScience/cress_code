@@ -12,6 +12,7 @@ img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
 /* titles and co */
 #page-title {color: #ae2101; margin: 15px 0 20px 0; line-height: 25px;}
 h3 a {color: #ae2101; text-decoration: none;}
+h2 a {color: #ae2101; text-decoration: none; line-height: 25px;}
 
 .wrapper{width:1008px; margin:0 auto;}
 #main{width:100%; float:left; background:url(images/man_group_bg.jpg) no-repeat right bottom; min-width:1008px }
@@ -43,11 +44,13 @@ h3 a {color: #ae2101; text-decoration: none;}
 .extra_box{width:697px; float:left; padding-bottom:168px;}
 .common_box{width:689px; float:left; padding-right:20px; }
 
-.common_box h3 {font-size:24px; line-height:32px; color:#ae2101 !important; padding:10px 0 11px 0; width:100%; }
+.common_box h3 {font-size:24px; line-height:32px; color:#ae2101; padding:10px 0 11px 0; width:100%; }
 .common_box h3 a {text-decoration: none !important; color:#ae2101 !important;}
 .common_box h3 a:hover {color: #d27f6c !important; text-decoration: none !important;}
 .common_box p{font-size:13px; line-height:15px; color:#626262; padding-bottom:19px; }
 .common_box p a{text-decoration:none; color:#3f7c8a;}
+.common_box ul {margin: 0 0 0 20px}
+.common_box ul li {margin: 7px 0 0 0}
 .content_detail_box{width:684px; float:left; padding: 0 16px 0 22px;}
 
 .common_section{width:682px; float:left; -webkit-border-radius: 5px; border-radius: 5px; behaviour:url(PIE.htc); z-index:99; border:1px solid #e4e4e4;
@@ -111,15 +114,50 @@ h3 a {color: #ae2101; text-decoration: none;}
 .media-gallery-collection .node h3 {font-size: 12pt; color: #000;}
 .media-gallery-collection {padding: 0; margin: 0}
 
+/* people */
+.view-staff {float:left; margin: 0 20px 0 0;}
+.view-staff td {padding: 10px 5px 10px 5px;font-size: 13pt; width: 199px}
+.view-staff td a {text-decoration: none;}
+.view-staff td a:hover {text-decoration: underline;}
+.view-staff caption {margin: 10px 0 10px 0}
+.view-staff caption a {font-size: 13pt; font-weight: bold; text-decoration: none;}
+
+/* person profile */
+.profile .field{padding: 0 0 10px 0}
+.profile .field-name-field-profile-name{display: inline-block; margin-right: 5px; }
+.profile .field-name-field-profile-last-name{display: inline-block;}
+
 /* hacks */
 .block-views .view .date-nav-wrapper .date-prev {margin-left: 0px;}
+#block-masquerade-masquerade {z-index: 10200; position: fixed; right: 0; padding:20px 10px 10px 10px; width: 160px; border: 2px gray solid; background: #fff;}
+  
+/*lists*/
+.item-list ul {list-style-type: none; margin:0; padding: 0}
+.item-list ul li {margin: 0; padding: 5px 0 0 0; }
+  
+/*books*/
+.view-books .views-row {padding: 5px 0 20px 0; width: 700px; clear:both;}
+.view-books .views-field {width: 600px; margin-left: 180px;}
+.view-books .views-field-title {margin:30px 0 20px 0;}
+.view-books .views-field-field-book-cover {float: left; width: 160px; margin: -70px 0 0 0; padding: 0}
+.view-books .views-field-field-book-cover img {width:154px; height:200px;}
 
 
-  
-  
-  
-  
-  
-  
-  
-  
+/* events */
+.view-events td,th {padding: 10px 5px 10px 5px; line-height: 12pt;} 
+.view-events thead {border-top: 3px solid #cccccc;}
+.view-events thead a {font-weight: bold; color: #000;}
+.view-events .pager {margin: 20px 0 0 0;}
+
+
+/* search results */
+#search-form {margin: 0 0 35px 0; border-bottom: 3px solid #ccc; padding-bottom: 20px}
+.search-results {margin: 10px 0 0 0}
+.search-results li h3 {font-family: Arial, Helvetica, sans-serif; padding: 0; line-height: 22px; color: blue; }
+.search-results li h3 a {text-decoration: underline;}
+.search-results .search-snippet-info {padding: 0}
+
+#edit-basic {display: inline-block;}
+#edit-advanced {display: inline-block; line-height: 9pt}
+
+

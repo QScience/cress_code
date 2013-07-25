@@ -50,11 +50,6 @@
 
         <?php print render($page['header']); ?>
         
-        <!-- @TO-DO: This probably should be printed elsewhere, I have set it here for development purposes -->
-        <?php if ($breadcrumb): ?>
-          <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-        <?php endif; ?>
-    
       </div>
     </div>
   </div>
@@ -63,8 +58,11 @@
 
     <div id="body_container">
      
-      <div class="top_container <?php if(!$home){ echo 'mar'; } ?>">
+      <div class="top_container <?php if(!$home){ echo 'mar'; } ?>" <?php if($user->uid AND ($_SERVER['REQUEST_URI'] !== '/')){echo 'style="margin-top:-430px;"';} ?>>
         <div class="left_sec">
+
+          <?php print render($page['content_header']); ?>
+          
           <?php print render($title_prefix); ?>
           <?php if ($title): ?>
             <h1 class="title" id="page-title">
