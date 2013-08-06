@@ -98,6 +98,6 @@
 </div>
 <script type="text/javascript">
   jQuery(document).ready(function() {
-    jQuery("#outer_header, #innarpage_header").backstretch("/sites/all/themes/cress/images/header_bg.jpg");
+    //jQuery("#outer_header, #innarpage_header").backstretch("/sites/all/themes/cress/images/header_bg.jpg");
   });
 </script>
