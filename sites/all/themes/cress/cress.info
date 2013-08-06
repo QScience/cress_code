@@ -10,11 +10,10 @@ regions[content] = Content
 regions[content_header] = Content Header
 regions[main_footer] = Main Footer
 regions[left_footer] = Left Footer
-
 stylesheets[all][] = style.css
 stylesheets[all][] = cressmenu.css
 scripts[] = js/ieh5fix.js
 scripts[] = js/jquery.cycle.all.js
 scripts[] = js/menu.js
-scripts[] = js/jquery.backstretch.min.js
+#scripts[] = js/jquery.backstretch.min.js
 

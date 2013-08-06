@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Armata);
 
-h1,h2,h3 {font-family: 'Armata', sans-serif;}
+h1,h2,h3 {font-family: 'Armata', sans-serif; color: #ae2101;}
 *{margin:0px; padding:0px;}
-body{font-size:12px; line-height:15px; color:#000; font-family:Arial, Helvetica, sans-serif; background:#f9f9fa;}
+body{font-size:12px; line-height:15px; color:#646464; font-family:Arial, Helvetica, sans-serif; background:#f9f9fa;}
 img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
 .curve{width:100%; float:left;}
 .curve img{float:left;}
@@ -12,13 +12,16 @@ img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
 /* titles and co */
 #page-title {color: #ae2101; margin: 15px 0 20px 0; line-height: 25px;}
 h3 a {color: #ae2101; text-decoration: none;}
-h2 a {color: #ae2101; text-decoration: none; line-height: 25px;}
+h2 a, h2 {color: #ae2101; text-decoration: none; line-height: 25px; font-size: 11pt;}
+h4 a, h4 {color: #ae2101; line-height: 20px; font-size: 9pt; font-weight: normal;}
+
+table { border-collapse: separate;}
 
 .wrapper{width:1008px; margin:0 auto;}
 #main{width:100%; float:left; background:url(images/man_group_bg.jpg) no-repeat right bottom; min-width:1008px }
 
 #outer_header{width:100%; float:left; height:661px;}
-#innarpage_header{width:100%; float:left; background: #fff no-repeat center 0; height:799px;}
+#innarpage_header{width:100%; float:left; background: no-repeat center 0; height:799px;}
 #header{width:1008px; float:left;}
 #header .logo{float:left; margin:28px 0 0 0;}
 #header .logo.mar{margin-top:150px;}
@@ -38,7 +41,7 @@ h2 a {color: #ae2101; text-decoration: none; line-height: 25px;}
  
 #body_container{width:1008px; float:left; position:relative;}
 #body_container .man_group{width:100%; position:absolute; right:-693px; bottom:-40px;  height:500px;}
-.top_container{width:968px; float:left; background:url(images/top_curve_bg.png) no-repeat 0 0; margin-top:-165px; padding:24px 18px 0 22px; }
+.top_container{width:968px; float:left; background: #fff; margin:-165px 0 -100px 0; padding:24px 18px 70px 22px; }
 .top_container.mar{margin-top:-582px; min-height: 600px;}
 .left_sec{width:697px; float:left;}
 .extra_box{width:697px; float:left; padding-bottom:168px;}
@@ -92,7 +95,7 @@ h2 a {color: #ae2101; text-decoration: none; line-height: 25px;}
 .right_sec .upcoming_event .box span{ font-size:13px; line-height:16px; color:#4c4c4c; padding-bottom:3px; float:left;}
 
 
-#footer{width:930px; float:left; background:url(images/footer_bg.jpg) no-repeat center bottom #fff; padding: 20px 30px 0 30px; margin:47px 9px 0px 9px; display:inline; height:240px;}
+#footer{width:930px; float:left; border-bottom: 10px #edd9be solid; background: #fff; padding: 20px 39px 0 39px; margin:47px 0px 50px 0px; display:inline; height:240px;}
 #footer .left_footer{width:381px; float:left; padding-top:13px;}
 #footer .left_footer p{font-size:13px; line-height:16px; color:#a3a3a3; padding:23px 0 0 24px;}
 #footer .right_footer{width:531px; float:right; padding-top:23px;}  
@@ -147,6 +150,7 @@ h2 a {color: #ae2101; text-decoration: none; line-height: 25px;}
 .view-events td,th {padding: 10px 5px 10px 5px; line-height: 12pt;} 
 .view-events thead {border-top: 3px solid #cccccc;}
 .view-events thead a {font-weight: bold; color: #000;}
+.view-events td a {font-weight: bold; color: #AE2101; text-decoration: none;}
 .view-events .pager {margin: 20px 0 0 0;}
 
 
@@ -156,8 +160,13 @@ h2 a {color: #ae2101; text-decoration: none; line-height: 25px;}
 .search-results li h3 {font-family: Arial, Helvetica, sans-serif; padding: 0; line-height: 22px; color: blue; }
 .search-results li h3 a {text-decoration: underline;}
 .search-results .search-snippet-info {padding: 0}
-
+p.search-snippet {padding:0;}
 #edit-basic {display: inline-block;}
-#edit-advanced {display: inline-block; line-height: 9pt}
+#edit-advanced {display: inline-block; margin-top: 30px; line-height: 9pt}
 
+/* easy-breadcrumb */
+.easy-breadcrumb a { color: #AE2101;}
+.easy-breadcrumb {color: #626262;}
 
+/*calendar*/
+.bt-content {padding-left: 20px !important;}

@@ -22,17 +22,13 @@ ul.nice-menu-down ul{width:auto; float:left; list-style:none;}
 ul.nice-menu-down ul li{width:auto; float:left;  line-height:16px; color:#605226; position:relative;}
 ul.nice-menu-down a{text-decoration:none; color:#605226; padding:17px 11px 17px 11px !important; float:left; width:auto;}
 ul.nice-menu-down ul li a:hover{color:#605226;}
-ul.nice-menu-down li.menuparent ul{width:133px; position:absolute; top:50px; left:0px; webkit-border-radius: 5px;
-border-radius: 5px;  background:#fff; behavior: url(PIE.htc); z-index:1;  }
+ul.nice-menu-down li.menuparent ul{width:133px; position:absolute; top:50px; left:0; background:#fff; behavior: url(PIE.htc); z-index:1;  }
+ul.nice-menu-down li.menuparent ul li ul {width:133px; position:absolute; top:0px; left:133px; background:#fff; behavior: url(PIE.htc); z-index:1;  }
 ul.nice-menu-down li.menuparent ul li{width:100%; float:left; line-height:18px; color:#605226;   border-bottom:1px solid #e6dfd4;   }
 ul.nice-menu-down li.menuparent ul li a{text-decoration:none; color:#605226; width:90%; padding:5px 0 5px 12px!important; float:left;    }
 ul.nice-menu-down li.menuparent ul li a:hover{color:#605226; background:#fbf6f1;  }
-
-ul.nice-menu-down li.menuparent ul li.first a:hover {width:90%; float:left; -webkit-border-radius: 5px 5px 0px 0px;
-        border-radius: 5px 5px 0px 0px;   behavior: url(PIE.htc); z-index:1; background:#fbf6f1; border:none!important;}
-
-ul.nice-menu-down li.menuparent ul li.last a:hover {-webkit-border-radius: 0px 0px 5px 5px;
-        border-radius: 0px 0px 5px 5px;  behavior: url(PIE.htc); z-index:1; background:#fbf6f1; border:0px!important;}  
+ul.nice-menu-down li.menuparent ul li.first a:hover {width:90%; float:left; behavior: url(PIE.htc); z-index:1; background:#fbf6f1; border:none!important;}
+ul.nice-menu-down li.menuparent ul li.last a:hover {behavior: url(PIE.htc); z-index:1; background:#fbf6f1; border:0px!important;}  
 ul.nice-menu-down li.menuparent ul li.none{border-bottom:none;}
 
 
