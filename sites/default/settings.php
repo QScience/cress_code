@@ -210,7 +210,24 @@
  *   );
  * @endcode
  */
-$databases = array();
+
+// @TO-DO: These settings are just for testing purposes. Remove this file and use proper credentials during deployment.
+$databases = array (
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'database' => 'cressp01',
+      'username' => 'cressp01',
+      'password' => 'cressp01',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
+
 
 /**
  * Access control for update.php script.

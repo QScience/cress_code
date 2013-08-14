@@ -60,22 +60,14 @@
      
       <div class="top_container <?php if(!$home){ echo 'mar'; } ?>" <?php if($user->uid AND ($_SERVER['REQUEST_URI'] !== '/')){echo 'style="margin-top:-430px;"';} ?>>
         <div class="left_sec">
-
-          <?php print render($page['content_header']); ?>
-          
-          <?php print render($title_prefix); ?>
-          <?php if ($title): ?>
-            <h1 class="title" id="page-title">
-              <?php print $title; ?>
-            </h1>
-          <?php endif; ?>
-          <?php print render($title_suffix); ?>
-      
           <?php if ($tabs): ?>
             <div class="tabs">
               <?php print render($tabs); ?>
             </div>
           <?php endif; ?>
+
+          <?php print render($page['content_header']); ?>
+          
           <div class="common_box">
             <?php print render($page['content']); ?>
           </div>
@@ -96,8 +88,3 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-  jQuery(document).ready(function() {
-    //jQuery("#outer_header, #innarpage_header").backstretch("/sites/all/themes/cress/images/header_bg.jpg");
-  });
-</script>
