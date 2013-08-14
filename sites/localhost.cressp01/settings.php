@@ -210,6 +210,8 @@
  *   );
  * @endcode
  */
+
+// @TO-DO: These settings are just for testing purposes. Remove this file and use proper credentials during deployment.
 $databases = array (
   'default' => 
   array (
