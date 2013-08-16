@@ -14,7 +14,7 @@ img,fieldset{outline:none; border:none; padding:0px; margin:0px;}
 h3 a {color: #ae2101; text-decoration: none;}
 h2 a, h2 {color: #ae2101; text-decoration: none; line-height: 25px; font-size: 11pt;}
 h4 a, h4 {color: #ae2101; line-height: 20px; font-size: 9pt; font-weight: normal;}
-
+a {color: #ae2101;}
 table { border-collapse: separate;}
 
 .wrapper{width:1008px; margin:0 auto;}
@@ -118,7 +118,7 @@ table { border-collapse: separate;}
 .media-gallery-collection {padding: 0; margin: 0}
 
 /* people */
-.view-staff {float:left; margin: 0 20px 0 0;}
+.view-staff {float:left; margin: 0 10px 0 0;}
 .view-staff td {padding: 10px 5px 10px 5px;font-size: 13pt; width: 199px}
 .view-staff td a {text-decoration: none;}
 .view-staff td a:hover {text-decoration: underline;}
@@ -129,6 +129,16 @@ table { border-collapse: separate;}
 .profile .field{padding: 0 0 10px 0}
 .profile .field-name-field-profile-name{display: inline-block; margin-right: 5px; }
 .profile .field-name-field-profile-last-name{display: inline-block;}
+#user-picture {
+    float: right;
+    padding-left: 15px;
+}
+#field_more_information_header {
+    font-weight: bold;
+}
+
+/* tabs */
+.left_sec .tabs {margin: 0 0 20px 0; background: #efefef; }
 
 /* hacks */
 .block-views .view .date-nav-wrapper .date-prev {margin-left: 0px;}
