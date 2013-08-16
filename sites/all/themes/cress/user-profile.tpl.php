@@ -37,11 +37,11 @@
 
 <?php 
 
-  $pic = $user_profile['user_picture']['#markup'];
+  $pic = @$user_profile['user_picture']['#markup'];
 
   $user_profile = (array) $user_profile['field_profile_name']['#object'];
 
-  switch ($user_profile['field_profile_position']['und'][0]['tid']) {
+  switch (@$user_profile['field_profile_position']['und'][0]['tid']) {
     case 82:
       $position = "Administrator";
       break;
@@ -55,13 +55,13 @@
       break;
   }
 
-  $title = $user_profile['position']['und'][0]['value'];
-  $institution = $user_profile['institution']['und'][0]['value'];
-  $firstname = $user_profile['field_profile_name']['und'][0]['value'];
-  $lastname = $user_profile['field_profile_last_name']['und'][0]['value'];
-  $bio = $user_profile['field_profile_biography']['und'][0]['value'];
-  $qual = $user_profile['field_profile_qualifications']['und'][0]['value'];
-  $web = $user_profile['field_profile_personal_websites']['und'];
+  $title = @$user_profile['position']['und'][0]['value'];
+  $institution = @$user_profile['institution']['und'][0]['value'];
+  $firstname = @$user_profile['field_profile_name']['und'][0]['value'];
+  $lastname = @$user_profile['field_profile_last_name']['und'][0]['value'];
+  $bio = @$user_profile['field_profile_biography']['und'][0]['value'];
+  $qual = @$user_profile['field_profile_qualifications']['und'][0]['value'];
+  $web = @$user_profile['field_profile_personal_websites']['und'];
   
   drupal_set_title($firstname . ' ' . $lastname);
 ?>
@@ -69,33 +69,34 @@
 <div id="user-profile">
   <h1 class="title" id="page-title">
     <?php
-      if (isset($position)) {
-        print $firstname .' '.
-            $lastname . ' (' . $title . ', '.$position.')';
+      if (isset($position) && isset($title)) {
+        echo $firstname .' '. $lastname . ' (' . $title . ', '.$position.')';
+      }elseif(isset($position)){
+        echo $firstname .' '. $lastname . ' ('.$position.')';
       }else{
-        print $firstname . ' ' . $lastname;
+        echo $firstname . ' ' . $lastname;
       }
     ?>
   </h1>
   <h4 style="margin:-15px 0 20px 0">
-        <?php print $qual; ?>
+        <?php echo @$qual; ?>
   </h4>
     <div id="user-picture">
-      <?php echo $pic; ?>
+      <?php echo @$pic; ?>
     </div>
   <div id="field_bio">
-    <?php print $bio; ?>
+    <?php echo @$bio; ?>
   </div>
 
   <div id="field_more_information">
     <?php
       if (isset($web)) {
-        print '<div id="field_more_information_header">More information:' . '</div>';
-        print '<ul>';
+        echo '<div id="field_more_information_header">More information:' . '</div>';
+        echo '<ul>';
         foreach ($web as $link){
-          print '<li>' . l($link['title'], $link['url'], array('attributes'=>array('target'=>'blank'))) . '</li>';
+          echo '<li>' . l($link['title'], $link['url'], array('attributes'=>array('target'=>'blank'))) . '</li>';
         }
-        print '</ul>';
+        echo '</ul>';
       }
     ?>
   </div>
