@@ -11,42 +11,9 @@
           </a>
         <?php endif; ?>
 
-
-
         <div class="right_side">
-              
-
             <?php print render($page['main_menu']); ?>
-            <!--
-            <ul id="nav" >
-              <li><a href="#">Home</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Projects</a>
-                
-              </li>
-              <li><a href="#">Publications</a>
-              <ul class="sub_menu">
-                  <li  class="first"><a href="#" class="none">Paper</a></li>
-                  <li><a href="#">Book</a></li>
-                  <li class="last none"><a href="#" >Presentation</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Links</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#"> About us</a></li>
-            </ul>
-            -->
-
-
-
-
-          <div id="login_sec"> 
-            <?php print render($page['login']); ?>
-          </div>
-
         </div>
-
-
 
         <?php print render($page['header']); ?>
         
@@ -68,22 +35,26 @@
 
           <?php print render($page['content_header']); ?>
           
-          <div class="common_box">
+          <div class="common_box <?php if(!render($page['sidebar_first'])) echo 'wide'; ?>">
             <?php print render($page['content']); ?>
           </div>
 
-
           <?php print render($page['left_footer']); ?>
+        </div>
 
-       
-         
-        </div>
-        <div class="right_sec">
-            <?php print render($page['sidebar_first']); ?>
-        </div>
+        <?php if(render($page['sidebar_first'])){ ?>
+          <div class="right_sec">
+              <?php print render($page['sidebar_first']); ?>
+          </div>
+        <?php } ?>
+
       </div>
       <div id="footer">
-            <?php print render($page['main_footer']); ?>
+          <?php print render($page['main_footer']); ?>
+
+          <div id="login_sec"> 
+            <?php print render($page['login']); ?>
+          </div>
       </div>
     </div>
   </div>
